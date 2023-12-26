@@ -9,6 +9,12 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
@@ -25,6 +31,14 @@ img {
   }
   .bg-blur {
     @apply fixed inset-0 z-30 bg-black/50;
+  }
+
+  .banner {
+    @apply text-bluewood m-0 overflow-hidden p-2 sm:mx-[1%] sm:mt-[41px] lg:my-[130px] lg:ml-[45px] lg:mr-[150px] xl:mx-[286px] xl:my-[130px] 2xl:mx-[392px];
+  }
+
+  .banner-text {
+    @apply mr-[12%] pb-8 pl-[13px] pr-8 pt-[41px] text-[22px] font-bold leading-[150%] md:pb-8 md:pl-3.5 md:pr-[16%] md:pt-[126px] sm:text-[38px] lg:mr-0 lg:px-2 lg:pb-[50px] lg:pr-[10%] xl:pb-[2%] xl:pr-[30%] 2xl:pb-[2%] 2xl:pr-[45%];
   }
 }
 
