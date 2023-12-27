@@ -12,6 +12,7 @@ export default {
         btn: "0 0 10px #3bb54a",
       },
       screens: {
+        sm: "415px",
         "2xl": "1500px",
       },
     },

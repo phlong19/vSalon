@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 
 import Banner from "./sections/Banner";
+import Benefits from "./sections/Benefits";
 import Footer from "./sections/Footer";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <main className="h-[2000px]">
         <Banner />
+        <Benefits />
       </main>
       <Footer />
     </>
