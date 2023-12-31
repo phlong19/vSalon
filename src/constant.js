@@ -26,3 +26,22 @@ export const banners = [
     textAfter: "hiệu quả nhất",
   },
 ];
+
+export const benefits = [
+  {
+    img: "./benefit/dieuphoi.png",
+    heading: "Điều phối lịch hẹn",
+    content: "Không còn lo lắng khi quên lịch hẹn với khách hàng.",
+  },
+  {
+    img: "./benefit/quanly.png",
+    heading: "Quản lý hiệu quả",
+    content: "Giúp nhân viên tăng năng suất làm việc. Quản lý hiệu quả từ xa.",
+  },
+  {
+    img: "./benefit/ganket.png",
+    heading: "Gắn kết khách hàng",
+    content:
+      "Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất cho khách.",
+  },
+];

@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
+import Carousel from "../components/Carousel";
 
 function Benefits() {
   return (
     <div className="bg-[#fafafa] pt-10">
       <div className="flex-center">
         <motion.div
-          initial={{ opacity: 0, y: "40px" }}
+          initial={{ opacity: 0, y: "120px" }}
           whileInView={{ opacity: 1, y: "0px" }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 0.95 }}
           className="text-center text-bluewood"
         >
           <h1 className="px-4 text-[28px] font-bold leading-[34px] md:px-2 md:text-4xl md:leading-[44px]">
@@ -17,6 +18,10 @@ function Benefits() {
             Hãy để chúng tôi đồng hành cùng thành công của bạn
           </p>
         </motion.div>
+      </div>
+
+      <div className="m-[0_auto] w-full max-w-[1100px] overflow-hidden">
+        <Carousel />
       </div>
     </div>
   );

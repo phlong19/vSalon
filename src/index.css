@@ -22,6 +22,23 @@ img {
   height: auto;
 }
 
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1) !important;
+  z-index: 2;
+
+  height: 424px;
+  width: 363px;
+}
+
+.swiper-slide-prev {
+  transform: scale(0.9) translateX(50%) !important;
+}
+
+.swiper-slide-next {
+  transform: scale(0.9) translateX(-50%) !important;
+}
+
 @layer components {
   .flex-center {
     @apply flex items-center justify-center;
