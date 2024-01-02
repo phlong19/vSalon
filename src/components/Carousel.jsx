@@ -18,7 +18,7 @@ function Carousel() {
 
   return (
     <Swiper
-      className="touch-manipulation transition-all delay-0 duration-[250ms]"
+      className="touch-manipulation lg:h-[500px] transition-all delay-0 duration-[250ms]"
       modules={[Navigation, Pagination]}
       loop={true}
       navigation={{
