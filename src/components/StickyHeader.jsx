@@ -17,7 +17,7 @@ function StickyHeader({ children }) {
   return (
     <header
       ref={ref}
-      className={`sticky left-0 top-[-1px] z-[1000] mx-auto flex w-full max-w-[1200px] flex-wrap justify-between bg-white px-4 xl:justify-center ${
+      className={`max-w-1k2 sticky left-0 top-[-1px] z-[1000] mx-auto flex w-full flex-wrap justify-between bg-white px-4 xl:justify-center ${
         stuck && "max-w-[1920px] shadow-[0_0_6px_#333]"
       }`}
     >

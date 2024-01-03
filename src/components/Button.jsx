@@ -4,7 +4,7 @@ function Button({ children, type = "primary", to }) {
       <a
         href={to}
         className={
-          "ml-3.5 block h-[48px] w-[242px] rounded-[36px] bg-primary px-8 pb-2 pt-2.5 text-xl font-medium leading-[150%] text-white md:ml-2"
+          "ml-3.5 block h-[48px] w-[242px] rounded-[36px] bg-primary px-8 pb-2 pt-2.5 text-xl font-medium leading-150 text-white md:ml-2"
         }
       >
         {children}

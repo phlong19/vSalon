@@ -15,6 +15,15 @@ export default {
         sm: "415px",
         "2xl": "1500px",
       },
+      backgroundImage: {
+        "free-trial": "url('./banner-free-trial.png')",
+      },
+      maxWidth: {
+        "1k2": "max-w-[1200px]",
+      },
+      lineHeight: {
+        150: "150%",
+      },
     },
   },
   plugins: [],

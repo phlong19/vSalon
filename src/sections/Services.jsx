@@ -12,9 +12,9 @@ function Services() {
   });
 
   return isNotMobile ? (
-    <div className="w-full pb-10">
+    <div id="service" className="w-full pb-10">
       {/* heading select */}
-      <div className="m-[0_auto] mt-[3%] flex w-full px-3.5 md:flex-wrap md:justify-evenly md:gap-11 lg:max-w-[1200px] lg:flex-nowrap lg:justify-between">
+      <div className="lg:max-w-1k2 m-[0_auto] mt-[3%] flex w-full px-3.5 md:flex-wrap md:justify-evenly md:gap-11 lg:flex-nowrap lg:justify-between">
         {services.map((s) => (
           <motion.div
             key={s.id}
@@ -53,7 +53,7 @@ function Services() {
                 key={s.id}
                 className={`${
                   active === s.id ? "sm:block lg:flex" : "hidden"
-                } m-[0_auto] w-full max-w-[1200px] overflow-hidden sm:pt-[5%] lg:p-3.5 lg:pt-[60px]`}
+                } max-w-1k2 mx-auto w-full overflow-hidden sm:pt-[5%] lg:p-3.5 lg:pt-[60px]`}
                 initial="hidden"
                 whileInView="visible"
                 variants={{
@@ -81,7 +81,7 @@ function Services() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h4 className="mb-1 text-xl font-bold text-bluewood sm:leading-[150%] md:leading-[30px] ">
+                  <h4 className="sm:leading-150 mb-1 text-xl font-bold text-bluewood md:leading-[30px] ">
                     {s.heading}
                   </h4>
                   <ul className="ml-[18px] list-disc">
