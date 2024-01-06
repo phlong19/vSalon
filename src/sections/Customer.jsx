@@ -3,7 +3,7 @@ import FadeInUpContainer from "../components/FadeInUpContainer";
 
 function Customer() {
   return (
-    <div className="relative z-0 h-[397px] w-full overflow-hidden bg-[image:url('./total/bannerkhachhang.jpg')]">
+    <div className="relative z-0 h-[397px] w-full overflow-hidden bg-[image:url('/total/bannerkhachhang.jpg')]">
       <FadeInUpContainer
         duration={0.75}
         className={"mx-auto w-full max-w-1k2 text-center"}

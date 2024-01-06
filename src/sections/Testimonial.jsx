@@ -9,7 +9,7 @@ import FadeInUpContainer from "../components/FadeInUpContainer";
 
 function Testimonial() {
   return (
-    <div className="w-full bg-[image:url('./testimonial.png')] bg-no-repeat pb-9">
+    <div className="w-full bg-[image:url('/testimonial.png')] bg-no-repeat pb-9">
       <FadeInUpContainer className="pb-5 pt-9 md:pt-10 lg:pt-16">
         <AnimatedSectionHeader
           text="Lắng nghe cảm nhận của khách hàng về"

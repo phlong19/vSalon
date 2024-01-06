@@ -16,7 +16,7 @@ export default {
         "2xl": "1500px",
       },
       backgroundImage: {
-        "free-trial": "url('./banner-free-trial.png')",
+        "free-trial": "url('/banner-free-trial.png')",
       },
       maxWidth: {
         "1k2": "1200px",

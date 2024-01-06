@@ -9,14 +9,19 @@ import FadeInUpContainer from "../components/FadeInUpContainer";
 
 function Footer() {
   return (
-    <footer className="relative bg-[image:url('./footer-bg.png')] text-white">
+    <footer className="relative font-medium bg-[image:url('/footer-bg.png')] text-white">
       <div className="mx-auto flex w-full max-w-1k2 flex-wrap px-3.5 pb-14 pt-8">
         <FadeInUpContainer duration={0.75} className={"pb-9 pl-3.5 sm:pl-11"}>
           <img src="./vsalon-footer.png" alt="footer logo" />
         </FadeInUpContainer>
-        <div className="md:flex-between">
-          <FadeInUpContainer>
-            <h3 className="relative pb-10 text-[28px] font-medium before:absolute before:bottom-8 before:left-[1%] before:h-[3px] before:w-9 before:rounded-[3px] before:bg-primary before:content-['']">
+        <div className="justify-between md:flex">
+          <FadeInUpContainer
+            className={
+              "relative max-w-full px-3.5 sm:max-w-[33.3%] md:max-w-[25%] md:flex-[0_0_33.3%]"
+            }
+            duration={0.75}
+          >
+            <h3 className="relative pb-10 text-[28px] before:absolute before:bottom-8 before:left-[1%] before:h-[3px] before:w-9 before:rounded-[3px] before:bg-primary before:content-['']">
               Giới thiệu
             </h3>
             <p className="pb-8 md:pb-14">
@@ -34,7 +39,12 @@ function Footer() {
               </span>
             </div>
           </FadeInUpContainer>
-          <FadeInUpContainer duration={0.75}>
+          <FadeInUpContainer
+            duration={0.75}
+            className={
+              "pb-[18px] pl-3.5 sm:pl-[4%] md:max-w-[33.3%] md:flex-[0_0_33.3%] md:pl-[7%] lg:pl-[10%]"
+            }
+          >
             <h3 className="relative pb-10 text-[28px] font-medium before:absolute before:bottom-8 before:left-[1%] before:h-[3px] before:w-9 before:rounded-[3px] before:bg-primary before:content-['']">
               Liên kết
             </h3>
@@ -42,7 +52,10 @@ function Footer() {
             <p className="cursor-pointer pb-4">Chính sách bảo hành</p>
             <p className="cursor-pointer pb-4">Hình thức thanh toán</p>
           </FadeInUpContainer>
-          <FadeInUpContainer duration={0.75}>
+          <FadeInUpContainer
+            duration={0.75}
+            className={"max-w-full px-3.5 md:max-w-[33.3%] md:flex-[0_0_33.3%]"}
+          >
             <h3 className="relative pb-10 text-[28px] font-medium before:absolute before:bottom-8 before:left-[1%] before:h-[3px] before:w-9 before:rounded-[3px] before:bg-primary before:content-['']">
               Liên hệ
             </h3>
