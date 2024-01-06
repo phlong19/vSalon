@@ -6,7 +6,6 @@ import { useWindowWidth } from "../hooks/useWindowWidth";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
 
 function getLength(width) {
   if (width > 950) return 3;

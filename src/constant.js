@@ -139,3 +139,27 @@ export const services = [
     ],
   },
 ];
+
+export const feedbacks = [
+  {
+    avt: "./customers/hue.png",
+    name: "CHỊ HUẾ",
+    role: "Marketing Rita Hair Salon",
+    description:
+      "Phần mềm vSalon hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi, đặc biệt là các dịp lễ trong năm. Nhờ có vSalon, chúng tôi không còn phải tốn nhiều chi phí đắt đỏ mã vẫn có thể truyền tải thông điệp đến được với đối tượng khách hàng.",
+  },
+  {
+    avt: "./customers/helen.png",
+    name: "BÀ HELEN TRẦN",
+    role: "Giám đốc Eden Beauty",
+    description:
+      "Nhờ có phần mềm vSalon, tôi tiết kiệm được nhiều thời gian và công sức trong quá trình quản lý chuỗi spa của mình. Tất cả thông tin về hoạt động kinh doanh, nhân viên, và sản phẩm đều được hiển thị chính xác và chi tiết trên phần mềm.",
+  },
+  {
+    avt: "./customers/ngocanh.png",
+    name: "Anh Ngọc Anh",
+    role: "Giám đốc chuỗi Spa Lagertroemia",
+    description:
+      "Cảm ơn vSalon đã hỗ trợ cho công việc quản lý của tôi. Với phần mềm vSalon, chúng tôi có thể tối ưu thời gian, thống kê lịch hẹn của khách hàng, giúp quá trình quản lý vận hành được hiệu quả.",
+  },
+];

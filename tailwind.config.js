@@ -19,7 +19,7 @@ export default {
         "free-trial": "url('./banner-free-trial.png')",
       },
       maxWidth: {
-        "1k2": "max-w-[1200px]",
+        "1k2": "1200px",
       },
       lineHeight: {
         150: "150%",

@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
-
 import { useWindowWidth } from "../hooks/useWindowWidth";
 import AnimatedSectionHeader from "../components/AnimatedSectionHeader";
+import FadeInUpContainer from "../components/FadeInUpContainer";
 
 function getBackgroundImage(width) {
   if (width <= 415) {
@@ -24,7 +23,7 @@ function MobileApp() {
         backgroundImage: getBackgroundImage(width),
       }}
     >
-      <motion.div className="max-w-1k2 mx-auto w-full">
+      <FadeInUpContainer className="mx-auto w-full max-w-1k2">
         <div className="flex w-full justify-start px-3.5 pt-10 text-center md:w-1/2 md:text-left lg:pt-20">
           <div>
             <AnimatedSectionHeader
@@ -33,7 +32,7 @@ function MobileApp() {
               center={false}
             />
             <br />
-            <p className="leading-150 px-3.5 text-base font-medium text-[#4a6069] md:p-0  md:text-lg md:leading-[22px]">
+            <p className="px-3.5 text-base font-medium leading-150 text-[#4a6069] md:p-0  md:text-lg md:leading-[22px]">
               Quản lý thuận tiện, cập nhật kịp thời với ứng dụng dành cho mobile
               và tablet
             </p>
@@ -61,7 +60,7 @@ function MobileApp() {
             </a>
           </span>
         </div>
-      </motion.div>
+      </FadeInUpContainer>
     </div>
   );
 }

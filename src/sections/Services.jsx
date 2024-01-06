@@ -14,7 +14,7 @@ function Services() {
   return isNotMobile ? (
     <div id="service" className="w-full pb-10">
       {/* heading select */}
-      <div className="lg:max-w-1k2 m-[0_auto] mt-[3%] flex w-full px-3.5 md:flex-wrap md:justify-evenly md:gap-11 lg:flex-nowrap lg:justify-between">
+      <div className="m-[0_auto] mt-[3%] flex w-full px-3.5 md:flex-wrap md:justify-evenly md:gap-11 lg:max-w-1k2 lg:flex-nowrap lg:justify-between">
         {services.map((s) => (
           <motion.div
             key={s.id}
@@ -22,7 +22,7 @@ function Services() {
               active === s.id
                 ? "opacity-100 before:w-full"
                 : "opacity-50 before:w-0"
-            } flex-center relative cursor-pointer flex-col pb-4 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:origin-left before:rounded-[3px] before:bg-primary before:transition-all before:duration-500 before:ease-out before:content-['']`}
+            } flex-center relative cursor-pointer flex-col pb-4 transition-opacity duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:origin-left before:rounded-[3px] before:bg-primary before:transition-all before:duration-500 before:ease-out before:content-[''] after:absolute after:-right-8 after:top-8 after:h-10 after:w-[1px] after:bg-[#e0e0e0] after:content-[''] hover:opacity-100`}
             onClick={() => setActive(s.id)}
           >
             <img
@@ -53,7 +53,7 @@ function Services() {
                 key={s.id}
                 className={`${
                   active === s.id ? "sm:block lg:flex" : "hidden"
-                } max-w-1k2 mx-auto w-full overflow-hidden sm:pt-[5%] lg:p-3.5 lg:pt-[60px]`}
+                } mx-auto w-full max-w-1k2 overflow-hidden sm:pt-[5%] lg:p-3.5 lg:pt-[60px]`}
                 initial="hidden"
                 whileInView="visible"
                 variants={{
@@ -81,7 +81,7 @@ function Services() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                 >
-                  <h4 className="sm:leading-150 mb-1 text-xl font-bold text-bluewood md:leading-[30px] ">
+                  <h4 className="mb-1 text-xl font-bold text-bluewood sm:leading-150 md:leading-[30px] ">
                     {s.heading}
                   </h4>
                   <ul className="ml-[18px] list-disc">
